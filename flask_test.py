@@ -21,7 +21,7 @@ def display(num):
 	for i in range(len(sequence)-1):
 		edge_dict.append({'from':sequence[i], 'to':sequence[i+1]})
 	#edge_dict.reverse()
-	return render_template('test.html', n=num, id_dict = json.dumps(id_dict), edge_dict=json.dumps(edge_dict))
+	return render_template('graph_template.html', n=num, id_dict = json.dumps(id_dict), edge_dict=json.dumps(edge_dict))
 
 if __name__=="__main__":
 	app.run()
